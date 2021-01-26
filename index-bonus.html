@@ -19,9 +19,16 @@
     <button type="button" @click='changeSize' name="button">Trasform subtitle in title </button>
     <div class="flex">
     <button type="button" name="button" @click='indietro()'>Indietro</button>
-    <img :src="img[index].url" :alt="img.alt">
+    <img :src="imgs[indexImg].url" :alt="imgs.alt">
     <button type="button" name="button" @click='avanti()'>Avanti</button>
   </div>
+  <div >
+    <i v-for="(img,index) in imgs" :class="classe4(index,indexImg)" @click='Active(index)'>bl</i>
+    <!-- <div >
+      <i v-for="(img,index) in imgs" :class="[index==indexImg ? 'active' : null]" @click='Active(index)'>bl</i>
+  </div> -->
+</div>
+
      <input type="text" name="" v-model='input' value="">
       <p>{{input}}</p>
       <select  @change='selectValue()'  >

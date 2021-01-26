@@ -8,8 +8,8 @@ const app = new Vue( {
   data:{
     name:'Davide',
     surname:'Bibbò',
-    index:0,
-    img:[{
+    indexImg:0,
+    imgs:[{
       url:'https://i.pinimg.com/736x/83/5c/4b/835c4b7dbc2757d24fed44e9ac9c4ea2.jpg',
       alt:'immagine di Rost'
     },
@@ -26,11 +26,19 @@ const app = new Vue( {
     cit:'Il sonno della ragione genera mostri',
     classe1:'sottotitolo',
     classe2:'titolo',
+    classe3:'rounded',
     input:'ciao',
     value0:'all',
-    value1:'option 1'
-
-  },
+    value1:'option 1',
+    classe4: (indexImg,index)=>{
+      if(index==indexImg)
+      {return 'active'}
+      else{
+        return null;
+      }
+    }
+  }
+,
   methods:{
    // changeColor(){
    //   this.color='white';
@@ -52,16 +60,20 @@ const app = new Vue( {
     }
   },
     avanti(){
-      this.index+=1;
-      if(this.index==this.img.length){
-        this.index=0;
+      this.indexImg+=1;
+      if(this.indexImg==this.imgs.length){
+        this.indexImg=0;
       }
     },
     indietro(){
-      this.index-=1;
-      if(this.index==-1){
-        this.index=this.img.length-1;
+      this.indexImg-=1;
+      if(this.indexImg==-1){
+        this.indexImg=this.imgs.length-1;
       }
+    },
+    Active(index){
+        this.indexImg=index;
+
     }
   }
 

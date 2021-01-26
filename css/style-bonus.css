@@ -46,3 +46,14 @@ button{
 .flex{
   display:flex;
 }
+
+.rounded{
+  margin:0 10px;
+  display:inline-block;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+}
+.active{
+  color:red;
+}
