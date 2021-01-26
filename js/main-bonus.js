@@ -53,9 +53,15 @@ const app = new Vue( {
   },
     avanti(){
       this.index+=1;
+      if(this.index==this.img.length){
+        this.index=0;
+      }
     },
     indietro(){
       this.index-=1;
+      if(this.index==-1){
+        this.index=this.img.length-1;
+      }
     }
   }
 
