@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Live coding vue js</title>
+        <!-- caricato nell'head -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="root">
+      <input  v-model="name">
+      <input  v-model="surname">
+      <p> Hello {{name}} {{surname}}</p>
+      <div  :class="boxClassName">
+       blablabla
+      </div>
+     <div  :style="'width:100px;height:100px;background:'+ color +';'">
+       blablabla
+      </div>
+      <button type="button" @click='saluta' name="button">click</button>
+      <input type="text" name="" v-on:keyup.enter="submitFunction" value="Premi invio">
+   <h1 :style="'color:'+titleColor">Questo è un titolo</h1>
+   <button type="button" @click="changeColor" name="button">Cambia il colore</button>
+   <h1 :class="titleColorClass">Questo è un titolo</h1>
+   <button type="button" @click="changeColorClass" name="button">Cambia il colore</button>
+ </div>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
