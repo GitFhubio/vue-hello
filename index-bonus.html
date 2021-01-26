@@ -12,7 +12,8 @@
 <body>
 
     <div id="root">
-    <h1>Auguri {{name}} {{surname}}</h1>
+    <h1 :style="'color:'+color+';background-color:'+backColor+';'">Auguri {{name}} {{surname}}</h1>
+    <h2 :class="classe1">{{cit}}</h2>
     <img :src="img.url" :alt="img.alt">
     </div>
 

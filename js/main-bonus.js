@@ -11,7 +11,16 @@ const app = new Vue( {
     img:{
       url:'https://www.smartweek.it/wpsw/wp-content/uploads/2018/06/Rustin-%E2%80%98Rust%E2%80%99-Cohle.jpg',
       alt:'immagine di Rust'
-    }
+    },
+    color:'red',
+    backColor:'black',
+    cit:'Il sonno della ragione genera mostri',
+    classe1:'sottotitolo',
+
+  },
+  methods:{
+   
+
 
   }
 });
