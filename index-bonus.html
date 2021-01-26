@@ -18,6 +18,12 @@
     <button type="button" @click='changeBackColor' name="button">Change BackColor</button>
     <button type="button" @click='changeSize' name="button">Trasform subtitle in title </button>
     <img :src="img.url" :alt="img.alt">
+     <input type="text" name="" v-model='input' value="">
+      <p>{{input}}</p>
+      <select  @change='selectValue()'  >
+        <option value="value0">all</option>
+        <option value="value1">option 1</option>
+      </select>
     </div>
 
     <!-- Script -->

@@ -16,11 +16,33 @@ const app = new Vue( {
     backColor:'black',
     cit:'Il sonno della ragione genera mostri',
     classe1:'sottotitolo',
+    classe2:'titolo',
+    input:'ciao',
+    value0:'all',
+    value1:'option 1'
 
   },
   methods:{
-   
-
-
+   // changeColor(){
+   //   this.color='white';
+   // },
+   changeColor: function(){
+     this.color='white';
+   },
+   changeBackColor: function(){
+     this.backColor='red';
+   },
+   changeSize:function(){
+     this.classe1=this.classe2;
+   },
+   selectValue(){
+    if(this.color=='red'){
+      this.color='pink';
+    } else{
+      this.changeBackColor();
+    }
   }
+
+   }
+
 });
