@@ -20,7 +20,7 @@ h1 {
 }
 
 img {
-    width: 100%;
+    width: 90%;
 }
 
 button{
@@ -42,4 +42,7 @@ button{
   background-color: red;
   font-size:70px;
   text-align: center;
+}
+.flex{
+  display:flex;
 }

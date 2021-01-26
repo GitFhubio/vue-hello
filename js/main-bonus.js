@@ -8,10 +8,19 @@ const app = new Vue( {
   data:{
     name:'Davide',
     surname:'Bibbò',
-    img:{
-      url:'https://www.smartweek.it/wpsw/wp-content/uploads/2018/06/Rustin-%E2%80%98Rust%E2%80%99-Cohle.jpg',
-      alt:'immagine di Rust'
+    index:0,
+    img:[{
+      url:'https://i.pinimg.com/736x/83/5c/4b/835c4b7dbc2757d24fed44e9ac9c4ea2.jpg',
+      alt:'immagine di Rost'
     },
+    {
+      url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYInr0SIKvZUd6tU84L6AUQnG-4wj-d-iy3A&usqp=CAU',
+      alt:'immagine di Rast'
+    },
+    {
+      url:'https://static.wikia.nocookie.net/true-detective/images/8/8f/Errol_Childress.png/revision/latest?cb=20150914034316',
+      alt:'immagine di Rist'
+    }],
     color:'red',
     backColor:'black',
     cit:'Il sonno della ragione genera mostri',
@@ -41,8 +50,13 @@ const app = new Vue( {
     } else{
       this.changeBackColor();
     }
+  },
+    avanti(){
+      this.index+=1;
+    },
+    indietro(){
+      this.index-=1;
+    }
   }
-
-   }
 
 });
