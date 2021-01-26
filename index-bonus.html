@@ -14,6 +14,9 @@
     <div id="root">
     <h1 :style="'color:'+color+';background-color:'+backColor+';'">Auguri {{name}} {{surname}}</h1>
     <h2 :class="classe1">{{cit}}</h2>
+    <button type="button" @click='changeColor' name="button">Change Color</button>
+    <button type="button" @click='changeBackColor' name="button">Change BackColor</button>
+    <button type="button" @click='changeSize' name="button">Trasform subtitle in title </button>
     <img :src="img.url" :alt="img.alt">
     </div>
 
